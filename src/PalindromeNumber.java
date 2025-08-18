@@ -1,5 +1,5 @@
-public class PalindromeNumber {
-    public static boolean isPolindrome(int x) {
+class solution {
+    public boolean isPalindrome(int x) {
         if (x < 0) return false;
 
         int original = x;
@@ -15,8 +15,9 @@ public class PalindromeNumber {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPolindrome(121));
-        System.out.println(isPolindrome(-121));
-        System.out.println(isPolindrome(10));
+        solution sol = new solution();
+        System.out.println(sol.isPalindrome(121));   // true
+        System.out.println(sol.isPalindrome(-121));  // false
+        System.out.println(sol.isPalindrome(10));    // false
     }
 }
